@@ -13,14 +13,26 @@ def first_challenge
     }
   }
 
-   contacts.each do |person, data|
+  contacts.each do |person, data|
+ 
+  data.each do |attribute, value|
 
-       data.each do |key, value|
-          if key == :favorite_icecream_flavors
-              value.delete_if do |flavor|
-              flavor == "strawberry"
-          end
+    if attribute == :favorite_icecream_flavors
+      value.each do |flavor|
+        # here, each index element in an ice cream flavor string
+
+        flavor.delete_if {|i| i == "strawberry"}
+        
+        # if flavor == "strawberry"
+
+        # flavor.shift()
+
+        # end
+        
+        
+
       end
+    end
   end
 end
 
