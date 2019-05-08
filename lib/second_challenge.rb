@@ -10,7 +10,7 @@ def second_challenge
 
 groceries = groceries.values
 
- array.flatten
+ groceries.flatten
 
  end
   
