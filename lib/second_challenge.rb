@@ -12,7 +12,7 @@ groceries = groceries.values
 
  groceries.flatten
 
- end
+ 
   
 
 end
